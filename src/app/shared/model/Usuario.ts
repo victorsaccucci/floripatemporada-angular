@@ -1,4 +1,4 @@
-import { Produto } from './produto'
+import { Produto } from './Produto'
 import { Sexo } from './sexo';
 
 export class Usuario {

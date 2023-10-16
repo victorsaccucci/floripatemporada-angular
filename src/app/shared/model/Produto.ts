@@ -1,8 +1,8 @@
-import { Endereco } from './endereco';
-import { Imagem } from './imagem';
-import { Especificacoes } from './especificacoes';
-import { DestaquesCasa } from './destaquesCasa';
-import { Usuario } from './usuario';
+import { Endereco } from './Endereco';
+import { Imagem } from './Imagem';
+import { Especificacoes } from './Especificacoes';
+import { DestaquesCasa } from './DestaquesCasa';
+import { Usuario } from './Usuario';
 
 export class Produto {
     id: number;
