@@ -1,3 +1,4 @@
+import { Imagem } from './../../shared/model/Imagem';
 import { Produto } from 'src/app/shared/model/Produto';
 import { ProdutosService } from './../../shared/service/produtos.service';
 import { Component, OnInit } from '@angular/core';
@@ -11,6 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProdutoListagemComponent implements OnInit{
 
   public produtos: Array<Produto> = new Array();
+  public imagens: Array<Imagem> = new Array();
 
   constructor(private produtoService : ProdutosService){
   }
@@ -29,5 +31,17 @@ export class ProdutoListagemComponent implements OnInit{
       }
     );
   }
+  buscarImagem(){
+    this.produtoService.listarImagens().subscribe(
+      resultado => {
+        this.imagens = resultado;
+      },
+      erro => {
+        console.log('Erro ao buscar imagens', erro);
+      }
+    );
+  }
+
+
 
 }

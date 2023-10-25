@@ -1,0 +1,61 @@
+
+<div class="flex flex-col items-center justify-center mt-10 pb-1">
+  <h1 class="text-3xl font-semibold text-gray-600 dark:text-black-400 mb-4 ml-4">
+    Onde fica sua acomodação?
+  </h1>
+</div>
+
+<div class="flex flex-col items-center justify-center pb-1">
+  <h1 class="text-1xl font-semibold text-gray-400 dark:text-black-400 mb-4 ml-4">
+    Seu endereço só é compartilhado com os hóspedes depois que a reserva é confirmada.
+  </h1>
+</div>
+
+
+<form class="mt-8 px-4 space-y-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div>
+      <label for="pais" class="text-gray-600 dark:text-gray-500">País</label>
+      <input type="text" id="pais" name="pais" [(ngModel)]="pais" class="w-full border-2 dark:border-gray-300 rounded-md px-3 py-2" placeholder="Seu país">
+    </div>
+    <div>
+      <label for="cidade" class="text-gray-600 dark:text-gray-500">Cidade</label>
+      <input type="text" id="cidade" name="cidade" [(ngModel)]="cidade" class="w-full border-2 dark:border-gray-300  rounded-md px-3 py-2" placeholder="Sua cidade">
+    </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div>
+      <label for="estado" class="text-gray-600 dark:text-gray-500">Estado</label>
+      <input type="text" id="estado" name="estado" [(ngModel)]="estado" class="w-full border-2 dark:border-gray-300  rounded-md px-3 py-2" placeholder="Seu estado">
+    </div>
+    <div>
+      <label for="cep" class="text-gray-600 dark:text-gray-500">CEP</label>
+      <input type="text" id="cep" name="cep" [(ngModel)]="cep" class="w-full border-2 dark:border-gray-300  rounded-md px-3 py-2" placeholder="Seu CEP">
+    </div>
+  </div>
+  <div>
+    <label for="rua" class="text-gray-600 dark:text-gray-500">Rua</label>
+    <input type="text" id="rua" name="rua" [(ngModel)]="rua" class="w-full border-2 dark:border-gray-300  rounded-md px-3 py-2" placeholder="Sua rua">
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div>
+      <label for="bairro" class="text-gray-600 dark:text-gray-500">Bairro</label>
+      <input type="text" id="bairro" name="bairro" [(ngModel)]="bairro" class="w-full border-2 dark:border-gray-300  rounded-md px-3 py-2" placeholder="Seu bairro">
+    </div>
+    <div>
+      <label for="numero" class="text-gray-600 dark:text-gray-500">Número</label>
+      <input type="number" id="numero" name="numero" [(ngModel)]="numero" class="w-full border-2 dark:border-gray-300  rounded-md px-3 py-2" placeholder="Seu número">
+    </div>
+  </div>
+</form>
+
+<footer class="fixed bottom-8 left-0 w-full p-4">
+  <button class="bg-gray-800 text-white px-4 py-2 rounded-lg absolute right-4 hover:bg-blue-600 focus:outline-none" (click)="avancar()">
+    Avançar
+  </button>
+  <a class="underline bg-white-800 text-black px-4 py-2 absolute left-4 hover:bg-blue-600 focus:outline-none" href="/detalhe">
+    Voltar
+  </a>
+</footer>
+
+

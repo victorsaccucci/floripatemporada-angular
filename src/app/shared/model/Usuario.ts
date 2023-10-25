@@ -1,5 +1,5 @@
 import { Produto } from './Produto'
-import { Sexo } from './sexo';
+import { Sexo } from './Sexo';
 
 export class Usuario {
     id: number;

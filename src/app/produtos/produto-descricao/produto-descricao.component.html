@@ -1,0 +1,30 @@
+<div class="flex flex-col items-center justify-center mt-10 pb-1">
+  <h1 class="text-3xl font-semibold text-gray-600  ml-4">
+    Crie um titulo para a sua acomodação
+  </h1>
+</div>
+<div class="flex flex-col items-center justify-center  pb-1">
+  <h2 class="text-1xl font-semibold text-gray-400 mb-4 ml-4">
+    Descreva brevemente
+  </h2>
+</div>
+<div class=" items-center justify-center">
+  <div class="p-6 rounded-lg">
+    <div class="w-1/2 mx-auto"> <!-- Largura do campo de título -->
+      <label for="titulo" class="text-gray-600 dark:text-gray-500">Título</label>
+      <input type="text" id="titulo" name="titulo"[(ngModel)]="titulo" class="w-full border-2 dark:border-gray-300 rounded-md px-3 py-2" placeholder="Seu título">
+    </div>
+    <div class="w-1/2 mx-auto mt-4">
+      <label for="descricao" class="text-gray-600 dark:text-gray-500">Descrição</label>
+      <textarea id="descricao" name="descricao" [(ngModel)]="descricao "class="h-64 w-full border-2 dark:border-gray-300 rounded-md px-3 py-2" placeholder="Sua descrição"></textarea>
+    </div>
+  </div>
+</div>
+<footer class="fixed bottom-8 left-0 w-full p-4">
+  <button class="bg-gray-800 text-white px-4 py-2 rounded-lg absolute right-4 hover:bg-blue-600 focus:outline-none" (click)="avancar()">
+    Avançar
+  </button>
+  <a class="underline bg-white-800 text-black px-4 py-2 absolute left-4 hover:bg-blue-600 focus:outline-none" href="/informacoes">
+    Voltar
+  </a>
+</footer>

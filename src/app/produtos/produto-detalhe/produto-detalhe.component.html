@@ -1,0 +1,84 @@
+
+<!-- Conteúdo da página -->
+<div class="flex flex-col items-center justify-center mt-10 pb-1 mb-32">
+  <h1 class="text-3xl font-semibold text-gray-600 dark:text-black-400 mb-4 ml-4">
+    Qual das seguintes opções descreve melhor seu espaço?
+  </h1>
+</div>
+
+
+<div class="flex justify-center items-center my-4 mt-16">
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Primeiro card - Casa -->
+    <article
+      (click)="toggleSelection(cards[0])" [ngClass]="{'selected-card': cards[0].selected}"
+      class="p-8 bg-white rounded-lg border-2 border-white-200 shadow-md dark:bg-white-800 dark:border-gray-300 text-center hover:border-gray-900 hover:shadow-lg">
+      <div class="flex items-center justify-center h-full">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/home.png" alt="home" />
+        <p class="text-2xl font-semibold text-gray-900 dark:text-black-400 ml-2">Casa</p>
+      </div>
+    </article>
+
+    <!-- Segundo card - Apartamento -->
+    <article
+      (click)="toggleSelection(cards[1])" [ngClass]="{'selected-card': cards[1].selected}"
+      class="p-8 bg-white rounded-lg border-2 border-white-200 shadow-md dark:bg-white-800 dark:border-gray-300 text-center hover:border-gray-900 hover:shadow-lg">
+      <div class="flex items-center justify-center h-full">
+        <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/apartment.png" alt="apartment" />
+        <p class="text-2xl font-semibold text-gray-900 dark:text-black-400 ml-2">Apartamento</p>
+      </div>
+    </article>
+
+    <!-- Terceiro card - Pousada -->
+    <article
+      (click)="toggleSelection(cards[2])" [ngClass]="{'selected-card': cards[2].selected}"
+      class="p-8 bg-white rounded-lg border-2 border-white-200 shadow-md dark:bg-white-800 dark:border-gray-300 text-center hover:border-gray-900 hover:shadow-lg">
+      <div class="flex items-center justify-center h-full">
+        <img width="25" height="25" src="https://img.icons8.com/ios/25/hostel.png" alt="hostel" />
+        <p class="text-2xl font-semibold text-gray-900 dark:text-black-400 ml-2">Pousada</p>
+      </div>
+    </article>
+
+    <!-- Quarto card - Fazenda -->
+    <article
+      (click)="toggleSelection(cards[3])" [ngClass]="{'selected-card': cards[3].selected}"
+      class="p-8 bg-white rounded-lg border-2 border-white-200 shadow-md dark:bg-white-800 dark:border-gray-300 text-center hover:border-gray-900 hover:shadow-lg">
+      <div class="flex items-center justify-center h-full">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/farm.png" alt="farm" />
+        <p class="text-2xl font-semibold text-gray-900 dark:text-black-400 ml-2">Fazenda</p>
+      </div>
+    </article>
+
+    <!-- Quinto card - Hotel -->
+    <article
+      (click)="toggleSelection(cards[4])" [ngClass]="{'selected-card': cards[4].selected}"
+      class="p-8 bg-white rounded-lg border-2 border-white-200 shadow-md dark:bg-white-800 dark:border-gray-300 text-center hover:border-gray-900 hover:shadow-lg">
+      <div class="flex items-center justify-center h-full">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/5-star-hotel--v2.png" alt="5-star-hotel--v2" />
+        <p class="text-2xl font-semibold text-gray-900 dark:text-black-400 ml-2">Hotel</p>
+      </div>
+    </article>
+
+    <!-- Sexto card - Microcasa -->
+    <article
+      (click)="toggleSelection(cards[5])" [ngClass]="{'selected-card': cards[5].selected}"
+      class=" mt-4 p-8 bg-white rounded-lg border-2 border-white-200 shadow-md dark:bg-white-800 dark:border-gray-300 text-center hover:border-gray-900 hover:shadow-lg">
+      <div class="flex items-center justify-center h-full">
+        <img width="25" height="25" src="https://img.icons8.com/material-outlined/25/home--v2.png" alt="home--v2" />
+        <p id="microcasa-title" class="text-2xl font-semibold text-gray-900 dark:text-black-400 ml-2">Microcasa</p>
+      </div>
+    </article>
+  </div>
+</div>
+
+<footer class="fixed bottom-8 left-0 w-full p-4">
+  <button (click)="avancar()" class="bg-gray-800 text-white px-4 py-2 rounded-lg absolute right-4 hover:bg-blue-600 focus:outline-none">
+    Avançar
+  </button>
+  <p class="underline bg-white-800 text-black px-4 py-2 absolute left-4 hover:bg-blue-600 focus:outline-none">
+    Voltar
+  </p>
+</footer>
+
+
+

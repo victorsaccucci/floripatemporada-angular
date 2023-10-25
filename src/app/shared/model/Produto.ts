@@ -9,7 +9,7 @@ export class Produto {
     titulo: string;
     descricao: string;
     endereco: Endereco;
-    animais: boolean;
+    animais: number;
     hospedes: number;
     quartos: number;
     banheiros: number;

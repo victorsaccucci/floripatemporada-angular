@@ -1,0 +1,80 @@
+<div class="flex flex-col items-center justify-center mt-16 pb-1 mb-16">
+  <h1 class="text-3xl font-semibold text-gray-600 dark:text-black-400 mb-4 ml-4">
+    Informe as capacidades da sua acomodação
+  </h1>
+</div>
+
+<div class="flex items-center justify-center ">
+  <form class="px-0 space-y-5 w-96">
+    <div>
+      <label for="numHospedes" class="text-gray-600 dark:text-gray-900">Número de Hóspedes</label>
+      <div class="flex items-center">
+        <input type="number" id="numHospedes" name="numHospedes"
+          class="w-full border-b dark:border-gray-300 rounded-t px-3 py-2" placeholder="Número de hóspedes"
+          style="appearance: none;" #numHospedesInput />
+        <button class="rounded-full p-0 dark-border-gray-300 hover-bg-gray-200 focus-outline-none"
+          (click)="aumentarValor(numHospedesInput)">
+          <img width="42" height="42" src="https://img.icons8.com/ios/42/000000/plus--v1.png" alt="plus--v1" />
+        </button>
+      </div>
+    </div>
+    <div>
+      <label for="numAnimais" class="text-gray-600 dark:text-gray-900">Animais de estimação?</label>
+      <div class="flex items-center">
+        <input type="number" id="numAnimais" name="numAnimais"
+          class="w-full border-b dark:border-gray-300 rounded-t px-3 py-2" placeholder="Número de hóspedes"
+          style="appearance: none;" #temAnimaisInput />
+        <button class="rounded-full p-0 dark-border-gray-300 hover-bg-gray-200 focus-outline-none"
+          (click)="aumentarValor(temAnimaisInput)">
+          <img width="42" height="42" src="https://img.icons8.com/ios/42/000000/plus--v1.png" alt="plus--v1" />
+        </button>
+      </div>
+    </div>
+    <div>
+      <label for="numQuartos" class="text-gray-600 dark:text-gray-900">Número de quartos</label>
+      <div class="flex items-center">
+        <input type="number" id="numQuartos" name="numQuartos"
+          class="w-full border-b dark:border-gray-300 rounded-t px-3 py-2" placeholder="Número de hóspedes"
+          style="appearance: none;" #numQuartosInput />
+        <button class="rounded-full p-0 dark-border-gray-300 hover-bg-gray-200 focus-outline-none"
+          (click)="aumentarValor(numQuartosInput)">
+          <img width="42" height="42" src="https://img.icons8.com/ios/42/000000/plus--v1.png" alt="plus--v1" />
+        </button>
+      </div>
+    </div>
+    <div>
+      <label abel for="numCamas" class="text-gray-600 dark:text-gray-900">Número de camas</label>
+      <div class="flex items-center">
+        <input type="number" id="numCamas" name="numCamas"
+          class="w-full border-b dark:border-gray-300 rounded-t px-3 py-2" placeholder="Número de hóspedes"
+          style="appearance: none;" #numCamasInput />
+        <button class="rounded-full p-0 dark-border-gray-300 hover-bg-gray-200 focus-outline-none"
+          (click)="aumentarValor(numCamasInput)">
+          <img width="42" height="42" src="https://img.icons8.com/ios/42/000000/plus--v1.png" alt="plus--v1" />
+        </button>
+      </div>
+    </div>
+    <div>
+      <label abel for="numBanheiros" class="text-gray-600 dark:text-gray-900">Número de banheiros</label>
+      <div class="flex items-center">
+        <input type="number" id="numBanheiros" name="numBanheiros"
+          class="w-full border-b dark:border-gray-300 rounded-t px-3 py-2" placeholder="Número de hóspedes"
+          style="appearance: none;" #numBanheirosInput />
+        <button class="rounded-full p-0 dark-border-gray-300 hover-bg-gray-200 focus-outline-none"
+          (click)="aumentarValor(numBanheirosInput)">
+          <img width="42" height="42" src="https://img.icons8.com/ios/42/000000/plus--v1.png" alt="plus--v1" />
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<footer class="fixed bottom-8 left-0 w-full p-4">
+  <button class="bg-gray-800 text-white px-4 py-2 rounded-lg absolute right-4 hover:bg-blue-600 focus:outline-none" (click)="avancar()">
+    Avançar
+  </button>
+  <a class="underline bg-white-800 text-black px-4 py-2 absolute left-4 hover:bg-blue-600 focus:outline-none" href="/destaques">
+    Voltar
+  </a>
+</footer>

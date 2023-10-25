@@ -4,9 +4,7 @@ export class DestaquesCasa {
     tv: boolean;
     cozinha: boolean;
     arcondicionado: boolean;
-    outros: string;
     piscina: boolean;
     churrasqueira: boolean;
     acessoAPraia: boolean;
-    distanciaDaPraia: number;
 }
