@@ -14,17 +14,46 @@ export class DadosCompartilhadosService {
   private destaquesCasa: DestaquesCasa = new DestaquesCasa();
   private tituloDescricao: Produto = new Produto();
   private endereco: Endereco = new Endereco();
-  private imagens: Imagem[] = new Array(4);
+
 
   private informacoes: Produto = new Produto();
   private valor: Produto = new Produto();
 
-  setImagem(imagens: Imagem[]) {
-    this.imagens  = imagens;
+  private imagem1 : Imagem = new Imagem();
+  private imagem2 : Imagem = new Imagem();
+  private imagem3 : Imagem = new Imagem();
+  private imagem4 : Imagem = new Imagem();
+
+  setImagem1(arquivo1: Blob) {
+    this.imagem1.arquivo  = arquivo1;
   }
 
-  getImagem(): Imagem[] {
-    return this.imagens;
+  getImagem1(): Imagem {
+    return this.imagem1;
+  }
+
+  setImagem2(arquivo2: Blob) {
+    this.imagem2.arquivo  = arquivo2;
+  }
+
+  getImagem2(): Imagem {
+    return this.imagem2;
+  }
+
+  setImagem3(arquivo3: Blob) {
+    this.imagem3.arquivo  = arquivo3;
+  }
+
+  getImagem3(): Imagem {
+    return this.imagem3;
+  }
+
+  setImagem4(arquivo4: Blob) {
+    this.imagem4.arquivo  = arquivo4;
+  }
+
+  getImagem4(): Imagem {
+    return this.imagem4;
   }
 
   setTituloDescricao(titulo: string, descricao: string) {

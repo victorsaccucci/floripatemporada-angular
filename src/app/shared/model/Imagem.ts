@@ -3,6 +3,6 @@ import { Produto } from "./Produto";
 
 export class Imagem {
   id: number;
-  imagem: Blob;
+  arquivo: Blob;
   produto: Produto;
 }
